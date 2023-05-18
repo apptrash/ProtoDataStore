@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "com.example.protodatastore";
+option java_multiple_files = true;
+
+message SamplePreferences {
+  bool flag = 1;
+  optional int32 randomSetting = 2;
+  WowEnum wow = 3;
+
+  enum WowEnum {
+    LIME = 0;
+    GRAPES = 1;
+    BANANA = 2;
+    TOMATO = 3;
+    QUINCE = 4;
+  }
+}
